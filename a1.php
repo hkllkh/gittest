@@ -1,5 +1,0 @@
-fasfas
-sdgsd
-sdgfas
-:wq
-
