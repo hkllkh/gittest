@@ -1,0 +1,16 @@
+DISTINCT 	返回结果独一	select distinct vend_id from products
+
+LIMIT * 	返回前*行数据	select vend_id from products LIMIT 6
+     *,?  返回*行开始的?行数据  select vend_id from products LIMIT 6,10
+
+ORDER BY   从小到大  
+ORDER BY * desc  从大到小
+ORDER BY *,?  先按*排,再按?排
+
+where a <> 5   <==>   where a != 5  相同
+where a between 5 and 10    筛选  5<a<10
+where a is null   返回是空值的
+where a in (1000,2000)   a是1000或2000的
+
+<p>通配符</p>
+ 
