@@ -22,3 +22,25 @@ REGEXP 'a|b'     匹配a或b
 REGEXP '[1,2,3]a'  <===>  REGEXP '[1-3]a'   都是匹配1a,2a,3a
 REGEXP '\\.' 匹配.这个字符  特殊字符要\\
 (对于abced来说，like 'bc' 没有结果，因为like匹配列,而REGEXP 'bc' 匹配数据有结果  )
+
+concat() 拼接字段     select concat(vend_name,'(',vend_country,')') from vendors ==> 结果是Anvils R Us(USA)  
+
+
+Left() 返回串左边的字符 
+Length() 返回串的长度 
+Locate() 找出串的一个子串 
+Lower() 将串转换为小写 
+LTrim() 去掉串左边的空格 
+Right() 返回串右边的字符
+RTrim() 去掉串右边的空格 
+Soundex() 返回串的SOUNDEX值 
+SubString() 返回子串的字符 
+Upper() 将串转换为大写 
+AVG() 返回某列的平均值  avg(DISTINCT price) 只考虑不同的价格
+COUNT() 返回某列的行数 
+MAX() 返回某列的最大值 
+MIN() 返回某列的最小值 
+SUM() 返回某列值之和 
+
+where和having基本相同 但having用于group by的筛选
+
