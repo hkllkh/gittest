@@ -44,3 +44,23 @@ SUM() 返回某列值之和
 
 where和having基本相同 但having用于group by的筛选
 
+insert into atable values()
+delete from atable where
+
+视图：虚拟，临时的表
+    create view view123 as select * from products;
+    select * from view123;
+    
+存储过程：
+DELIMITER $$    //开始 
+
+USE `test_db`$$
+CREATE  PROCEDURE `new_procedure3`() //创建视图
+BEGIN
+select * from products;
+END$$  
+DELIMITER ;;  //结束
+
+call new_procedure3();  使用视图
+
+
