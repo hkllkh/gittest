@@ -51,16 +51,19 @@ delete from atable where
     create view view123 as select * from products;
     select * from view123;
     
+    
 存储过程：
-DELIMITER $$    //开始 
+SHOW PROCEDURE STATUS 查看存储过程
 
+DELIMITER $$    //开始 
 USE `test_db`$$
-CREATE  PROCEDURE `new_procedure3`() //创建视图
+CREATE  PROCEDURE `new_procedure3`() //创建存储过程
 BEGIN
-select * from products;
+    select * from products;
 END$$  
 DELIMITER ;;  //结束
 
-call new_procedure3();  使用视图
+call new_procedure3();  使用存储过程
+
 
 
